@@ -1,0 +1,6 @@
+<todo-form (todoAdded)="handleTodoAdded($event)"></todo-form>
+<todo-list
+  [todos]="todos"
+  (todoUpdated)="handleTodoUpdated($event)"
+  (todoDeleted)="handleTodoDeleted($event)"
+></todo-list>

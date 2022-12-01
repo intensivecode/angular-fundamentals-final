@@ -1,0 +1,35 @@
+.container {
+  padding: 8px 16px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+}
+
+label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 15px 15px 15px 60px;
+  user-select: none;
+  color: initial;
+  text-decoration: none;
+}
+
+label.completed {
+  color: #d9d9d9;
+  text-decoration: line-through;
+}
+
+button {
+  font-size: 22px;
+  color: #cc9a9a;
+}
+
+button:hover {
+  color: #af5b5e;
+}

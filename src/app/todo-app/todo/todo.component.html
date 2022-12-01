@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="form-control">
+    <input
+      [id]="todo.id"
+      type="checkbox"
+      (change)="todoUpdated.emit(todo.id)"
+    />
+    <label [htmlFor]="todo.id" [class.completed]="todo.completed">
+      {{ todo.title }}
+    </label>
+  </div>
+  <button (click)="todoDeleted.emit(todo.id)">Delete</button>
+</div>

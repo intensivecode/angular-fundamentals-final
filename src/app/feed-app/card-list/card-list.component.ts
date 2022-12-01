@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
-import { IItem } from 'src/interfaces';
+import { Item } from 'interfaces';
 
 @Component({
   selector: 'card-list',
   templateUrl: './card-list.component.html',
 })
 export class CardListComponent {
-  @Input('items') items: IItem[];
+  @Input('items') items: Item[];
 }

@@ -5,7 +5,7 @@ type Size = 'small' | 'medium' | 'large';
 @Component({
   selector: 'card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css'],
+  styleUrls: ['../styles.css'],
 })
 export class CardComponent {
   @Input('title') title: string;

@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { IItem } from '../../interfaces';
+import { Item } from 'interfaces';
 
 @Component({
-  selector: 'app-feed',
+  selector: 'feed-app',
   templateUrl: './feed.component.html',
 })
-export class FeedComponent {
-  items: IItem[] = [
+export class FeedAppComponent {
+  items: Item[] = [
     {
       title: 'first item',
       image: 'https://via.placeholder.com/350x150',

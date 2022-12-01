@@ -1,0 +1,8 @@
+<div>
+  <todo
+    *ngFor="let todo of todos"
+    [todo]="todo"
+    (todoDeleted)="todoDeleted.emit(todo.id)"
+    (todoUpdated)="todoUpdated.emit(todo.id)"
+  ></todo>
+</div>
